@@ -22,7 +22,7 @@
         }
 
         header.header-bg-img {
-            background-image: url(../static/img/starmap.png);
+            background-image: url('../static/img/starmap.png');
         }
 
         h1.header-title {
@@ -37,6 +37,23 @@
         .nav-color {
             background-color: #FFE81F;
             opacity: .75;
+        }
+
+        h3.section-header {
+            letter-spacing: 3px;
+            color: #FFE81F;
+        }
+
+        a.socials-link {
+            width: 100px;
+            height: 100px;
+            background-position: right bottom;
+            background-repeat:no-repeat;
+            background-size: contain;
+        }
+
+        a.linkedin {
+            background-image: url('../static/img/LI-In-Bug.png');
         }
     </style>
 
@@ -58,13 +75,37 @@
         </div>
     </header>
     <div class="bg-dark container-fluid" style="height:600px;">
+        <article class="row justify-content-center align-items-center" id="socials">
+            <div class="col-2 col-offset-5">
+                <h3 class="section-header font-weight-normal">Socials</h3>
+            </div>
+            <span class="w-100"></span>
+            <div class="col-sm-4 col-sm-offset-5 text-light">
+                <ul class="nav nav-fill text-center">
+                    <li class="nav-item">
+                        <a class="socials-link linkedin nav-link text-hide" href="https://www.linkedin.com/in/adam-cowan-5a5b18129/">Linkedin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="socials-link linkedin nav-link text-hide" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="socials-link linkedin nav-link text-hide" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="socials-link linkedin nav-link text-hide" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+    <footer>
         <nav class="navbar nav-color navbar-expand-lg navbar-light fixed-bottom justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#home">Active</a>
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#socials">Socials</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
@@ -74,8 +115,6 @@
                 </li>
             </ul>
         </nav>
-    </div>
-    <footer>
     </footer>
 
     <!-- Optional JavaScript -->
